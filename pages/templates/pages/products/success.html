@@ -1,0 +1,31 @@
+{% extends 'pages/base.html' %}
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card mt-5">
+                <div class="card-header bg-success text-white">
+                    Success
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="card-title">✓ Product created</h4>
+                    <p class="card-text">The product has been successfully created.</p>
+                    
+                    <!-- Mostrar información del producto creado -->
+                    <div class="alert alert-info mt-4">
+                        <h5>Product Details:</h5>
+                        <p><strong>ID:</strong> {{ product.id }}</p>
+                        <p><strong>Name:</strong> {{ product.name }}</p>
+                        <p><strong>Price:</strong> ${{ product.price }}</p>
+                        <p><strong>Description:</strong> {{ product.description }}</p>
+                    </div>
+                    
+                    <a href="{% url 'products' %}" class="btn btn-primary">View All Products</a>
+                    <a href="{% url 'create' %}" class="btn btn-secondary">Create Another Product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
