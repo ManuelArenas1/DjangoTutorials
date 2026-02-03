@@ -12,7 +12,7 @@ A simple online store application built with Django.
 
 1. Clone the repository
 ```bash
-git clone https://github.com/TU-USUARIO/TU-REPO.git
+git clone https://github.com/ManuelArenas1/DjangoTutorials.git
 cd TU-REPO
 ```
 
